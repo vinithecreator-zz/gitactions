@@ -10,5 +10,8 @@ jobs:
   hello_world:
     runs-on: ubuntu-16.04
     steps:
+      - name: Realiza o checkout
+      - uses: actions/checkout@v2
+
       - name: Hello !
-        uses: echo "Hello World" 
+        uses: $echo "Hello World" 
