@@ -13,7 +13,11 @@ jobs:
       - name: Realiza o checkout
       - uses: actions/checkout@v2
 
-      - name: Instal o Python 3.10
+      - name: Instala o Python 3.10
       - uses: actions/setup-python@v2
         with:
           python-version: 3.10
+        
+      - name: Entra no modo interativo do Python
+      - run: python3
+      - run: print('hello world')
